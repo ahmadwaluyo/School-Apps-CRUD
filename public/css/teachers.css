@@ -1,0 +1,67 @@
+h1, a {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#teacher {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+}
+
+#teacher td, #teacher th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#teacher tr:nth-child(even){background-color: #f2f2f2;}
+
+#teacher tr:hover {background-color: #ddd;}
+
+#teacher th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #563d7c;
+  color: white;
+}
+
+#form {
+    text-align: left;
+    margin-left: 130px;
+}
+
+*{
+box-sizing: border-box;
+}
+form.example input[type=text] {
+padding: 8px;
+font-size: 17px;
+border: 1px solid grey;
+float: left;
+width: 80%;
+background: #f1f1f1;
+}
+
+form.example button {
+float: right;
+width: 20%;
+padding: 8px;
+background: #563d7c;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none;
+cursor: pointer;
+}
+
+form.example button:hover {
+background: #0b7dda;
+}
+
+form.example::after {
+content: "";
+clear: both;
+display: table;
+}

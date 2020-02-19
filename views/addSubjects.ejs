@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/bootstrap-menu-css') %>
+    <link rel="stylesheet" type="text/css" href="/public/css-add/subjects.css">
+    <title>Add Subjects</title>
+</head>
+<body>
+    <%- include('../partials/bootstrap-menu-ejs') %>
+    <form action="/subjects/add" method="POST">
+        <div class="container">
+            <h1>Add Subjects Data</h1><br>
+            <%- include('../partials/bootstrap-error-ejs') %>
+            <label for="subject_name">Subject Name :</label>
+            <input type="text" id="subject_name" name="subject_name" required>
+            <button type="submit" class="submitbtn">Submit</button>
+        </div>
+    </form>
+    <br><br>
+    <%- include('../partials/bootstrap-footer-ejs') %>
+</body>
+</html>

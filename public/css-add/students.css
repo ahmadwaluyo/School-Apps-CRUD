@@ -1,0 +1,48 @@
+* {box-sizing: border-box}
+
+.container {
+padding: 0 400px;
+}
+
+input[type=text], input[type=date], input[type=email] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+.submitbtn {
+background-color: #563d7c;
+color: white;
+padding: 10px 10px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 20%;
+opacity: 0.9;
+}
+
+.submitbtn:hover {
+opacity:1;
+}
+
+a {
+color: dodgerblue;
+}
+
+h1, h4 {
+    text-align: center;
+    text-decoration: none;
+}

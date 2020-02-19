@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/subjects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%- include('../partials/bootstrap-menu-css') %>
+    <title>SUBJECTS PAGE</title>
+</head>
+<body>
+    <%- include('../partials/bootstrap-menu-ejs') %>
+    <center>
+    <h1>SUBJECT PAGE</h1>
+    <%- include('../partials/bootstrap-success-ejs') %>
+    <a href="http://localhost:3000/subjects/add">Add Subjects</a>
+    <br><br>
+    <form class="example" action="/subjects" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <br><br>
+    <table id="subject">
+        <tr>
+            <th>Id</th>
+            <th>Subject Name</th>
+            <th>Option</th>
+        </tr>
+        <% for(let i=0; i < data.length; i++) { %>
+            <tr>
+                <td><%= data[i].id %></td>
+                <td><%= data[i].subject_name %></td>
+                <td><a href= "/subjects/edit/<%= data[i].id %>" >Edit</a> | <a href= "/subjects/delete/<%= data[i].id %>" >Delete</a></td>
+            </tr>
+        <% } %>
+    </table>
+    <br><br>
+    <%- include('../partials/bootstrap-footer-ejs') %>
+    </center>
+</body>
+</html>

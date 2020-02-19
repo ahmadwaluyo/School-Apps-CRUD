@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/students.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%- include('../partials/bootstrap-menu-css') %>
+    <title>STUDENTS PAGE</title>
+</head>
+<body>
+    <%- include('../partials/bootstrap-menu-ejs') %>
+    <center>
+    <h1>STUDENT PAGE</h1>
+    <%- include('../partials/bootstrap-success-ejs') %>
+    <a href="http://localhost:3000/students/add">Add Students</a>
+    <br><br>
+    <form class="example" action="/students" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <br><br>
+    <table id="student">
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Birth Date</th>
+            <th>Gender</th>
+            <th>Option</th>
+        </tr>
+        <% for(let i=0; i < data.length; i++) { %>
+            <tr>
+                <td><%= data[i].id %></td>
+                <td><%= data[i].first_name %></td>
+                <td><%= data[i].last_name %></td>
+                <td><%= data[i].email %></td>
+                <td><%= data[i].birth_date %></td>
+                <td><%= data[i].gender %></td>
+                <td><a href= "/students/edit/<%= data[i].id %>" >Edit</a> | <a href= "/students/delete/<%= data[i].id %>" >Delete</a></td>
+            </tr>
+        <% } %>
+    </table>
+    <br><br>
+    <%- include('../partials/bootstrap-footer-ejs') %>
+    </center>
+</body>
+</html>

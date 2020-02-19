@@ -1,0 +1,24 @@
+{
+  "name": "school-application-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrome-fox-mcc-03/school-application-final.git"
+  },
+  "author": "ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrome-fox-mcc-03/school-application-final/issues"
+  },
+  "homepage": "https://github.com/chrome-fox-mcc-03/school-application-final#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "pg": "^7.18.1"
+  }
+}

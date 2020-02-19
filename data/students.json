@@ -1,0 +1,34 @@
+[
+    {
+        "id" : "1",
+        "first_name" : "Adrianus",
+        "last_name" : "Chaniago",
+        "email" : "adrian88@sekolah.id",
+        "birthdate" : "15-02-1995",
+        "gender" : "male"
+    },
+    {
+        "id" : "2",
+        "first_name" : "Reki",
+        "last_name" : "Fakhrurrozi",
+        "email" : "rekzxx@sekolah.id",
+        "birthdate" : "17-03-1996",
+        "gender" : "male"
+    },
+    {
+        "id" : "3",
+        "first_name" : "Zidni",
+        "last_name" : "Kadir",
+        "email" : "zidni999@sekolah.id",
+        "birthdate" : "17-09-1995",
+        "gender" : "female"
+    },
+    {
+        "id" : "4",
+        "first_name" : "Yulius",
+        "last_name" : "Adiprasetya",
+        "email" : "yuliusadi@sekolah.id",
+        "birthdate" : "17-08-1995",
+        "gender" : "male"
+    }
+]
